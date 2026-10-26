@@ -1,0 +1,68 @@
+name: Bug report
+description: Something in Model Constructor did not work as expected.
+labels: ["bug"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Please do not attach models or files you are not allowed to share. A screenshot of the results table and the log lines are usually enough.
+  - type: input
+    id: plugin-version
+    attributes:
+      label: Model Constructor version
+      description: Shown in Edit > Plugins, or in ModelConstructor.uplugin.
+      placeholder: "1.0.0"
+    validations:
+      required: true
+  - type: input
+    id: engine-version
+    attributes:
+      label: Unreal Engine version
+      placeholder: "5.6.1"
+    validations:
+      required: true
+  - type: dropdown
+    id: install
+    attributes:
+      label: Installed as
+      options:
+        - Project plugin (in the project's Plugins folder)
+        - Engine plugin (in the engine's Plugins folder)
+    validations:
+      required: true
+  - type: dropdown
+    id: template
+    attributes:
+      label: Template used
+      options:
+        - Datasmith Model
+        - Datasmith Model with Collision
+        - Twin Sync Model
+        - Twin Sync Model with Collision
+        - A project template
+        - Not an import problem
+    validations:
+      required: true
+  - type: textarea
+    id: what-happened
+    attributes:
+      label: What happened
+      description: What you did, what you expected, and what happened instead.
+    validations:
+      required: true
+  - type: textarea
+    id: results
+    attributes:
+      label: Results table and warnings
+      description: Paste or attach a screenshot of the results table and the warnings box from the run.
+  - type: textarea
+    id: log
+    attributes:
+      label: Output Log
+      description: The last lines of the Output Log, filtered to LogModelConstructor.
+      render: text
+  - type: input
+    id: model-size
+    attributes:
+      label: Model size
+      description: Roughly how many meshes or actors, and the .udatasmith file size, if known.

@@ -1,0 +1,35 @@
+{
+	"FileVersion": 3,
+	"Version": 9,
+	"VersionName": "1.0.0",
+	"FriendlyName": "Model Constructor",
+	"Description": "Datasmith import and model preparation tools for Unreal Engine, for BIM and Twin Sync workflows.",
+	"Category": "Editor",
+	"CreatedBy": "GeoMappit",
+	"CreatedByURL": "https://github.com/Geomappit",
+	"DocsURL": "https://github.com/Geomappit/ModelConstructor",
+	"MarketplaceURL": "",
+	"SupportURL": "https://github.com/Geomappit/ModelConstructor/issues",
+	"CanContainContent": false,
+	"IsBetaVersion": false,
+	"IsExperimentalVersion": false,
+	"Installed": false,
+	"Modules": [
+		{
+			"Name": "ModelConstructor",
+			"Type": "Editor",
+			"LoadingPhase": "Default",
+			"PlatformAllowList": [ "Win64" ]
+		}
+	],
+	"Plugins": [
+		{
+			"Name": "DatasmithContent",
+			"Enabled": true
+		},
+		{
+			"Name": "DatasmithImporter",
+			"Enabled": true
+		}
+	]
+}

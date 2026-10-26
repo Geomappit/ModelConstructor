@@ -1,0 +1,22 @@
+# Normalise text to LF in the repository. Git converts on checkout per user settings,
+# so Windows users editing in Rider or Visual Studio still get their usual line endings.
+* text=auto
+
+*.h      text diff=cpp
+*.cpp    text diff=cpp
+*.cs     text diff=csharp
+*.uplugin text
+*.md     text
+NOTICE   text
+LICENSE  text
+*.yml    text
+
+*.png    binary
+*.jpg    binary
+*.uasset binary
+*.umap   binary
+
+# Kept out of release archives made with "git archive" and GitHub's source downloads.
+/.github        export-ignore
+/.gitattributes export-ignore
+/.gitignore     export-ignore

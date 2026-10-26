@@ -1,0 +1,30 @@
+# Build output. Unreal rebuilds these for each engine version and project.
+Binaries/
+Intermediate/
+
+# Editor and engine caches
+Saved/
+DerivedDataCache/
+
+# IDE and tool files
+.vs/
+.vscode/
+.idea/
+*.sln
+*.suo
+*.user
+*.VC.db
+*.opensdf
+*.sdf
+
+# Packaged release archives. Attach these to GitHub releases rather than committing them.
+*.zip
+
+# Python caches
+__pycache__/
+*.pyc
+
+# Operating system files
+.DS_Store
+Thumbs.db
+desktop.ini
