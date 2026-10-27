@@ -2,7 +2,7 @@
 
 Notable changes to Model Constructor, newest first. Version numbers follow [Semantic Versioning](https://semver.org/).
 
-## 1.0.0
+## 1.0.0 - 2026-10-27
 
 First public release. Supports Unreal Engine 5.4 to 5.8 on Windows, as a project plugin or an engine plugin.
 
